@@ -1,10 +1,12 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +37,68 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.memoryContainer{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.memoryHeader{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.timer, .tableResultsTitle{
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.memoryCenter{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.startView{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 54vw;
+  height: 90vh;
+}
+
+.tableResults{
+  width: 14vw;
+}
+
+.tableResults table{
+  width: 100%;
+  border: 1px solid black;
+}
+
+.tableResults table td{
+  border: 1px solid black;
+}
+
+.startView_button{
+  padding: 16px 30px;
+  border: none;
+  border-radius: 12px;
+  background: #35ff35;
+  cursor: pointer;
+}
+
+.memoryContent{
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 54vw;
+  margin: 0 auto;
 }
